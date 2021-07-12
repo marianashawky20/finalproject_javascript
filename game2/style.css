@@ -1,0 +1,132 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#game {
+    width:800px;
+    height:500px;
+    padding: 100px;
+    margin: auto;
+    text-align: center;
+    background-color: #EEE;
+    position: relative;
+}
+
+@media (max-width:762px)
+{
+    body{
+        background-color: #EEE;
+        max-width: 762px;
+        overflow: hidden;
+    }
+#game{
+    max-width: 425px;
+    margin: 0 0 0 0;
+    text-align: center;
+    overflow: hidden;
+}
+.time{
+    margin-right: 380px;
+}
+
+}
+
+#game h2 {
+
+    color: red;
+    letter-spacing: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#game button {
+    padding: 5px 10px;
+}
+
+#game input {
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+#game label {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#game #score {
+    margin-left: 65px;
+}
+
+.time {
+    position: absolute;
+    top: 70px;
+    right: -450px;
+    font-weight: bold;
+    color: red;
+}
+
+#timer {
+    margin-left: 95px;
+}
+
+#Success {
+    width: 98.7vw;
+    height: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 80%;
+    background-color: #000;
+    perspective: 300px;
+
+}
+
+#Success h1 {
+    display: inline-block;
+    position: absolute;
+    top: 16%;
+    left: 44%;
+    color: #FFF;
+    transition: 1s;
+    animation-name: victory;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+
+}
+
+
+@keyframes victory {
+    0% {
+        transform: translateZ(0);
+        color: #FFF;
+    }
+
+    50% {
+        transform: translateZ(100px);
+        color: Red;
+    }
+
+    100% {
+        transform: translateZ(0);
+        color: #FFF;
+    }
+}
+
+#Success button {
+    position: absolute;
+    top: 20%;
+    left: 44%;
+    width: 170px;
+    height: 57px;
+    background-color:orangered ;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 28px;
+
+}

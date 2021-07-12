@@ -1,0 +1,97 @@
+
+
+
+h1{
+
+    text-align: center;
+    color:#8f0b0b;
+    font-size: 70px;
+}
+
+h3{
+
+    text-align: center;
+    color:#6d1414;
+    font-size: 45px;
+    font-family:cursive;
+}
+
+
+#main{
+
+    width: 620px;
+    margin: 0 auto;
+    padding-left: 20px;
+    background-color: rgb(120, 201, 187);
+    height: 580px;
+    overflow: hidden;
+}
+
+div{
+   background: url(images/bg.jpg);
+    float: left;
+    cursor: pointer;
+    margin:10px;
+}
+
+
+img{
+
+    width:130px;
+    height:120px ;
+    opacity:0;
+    
+    }
+
+#Success{
+    width: 98.7vw;
+    height: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    background-color: #000;
+    perspective: 300px;
+    
+}
+#Success h1{
+    display: inline-block;
+ position: absolute; top: 30%;
+ left: 35%;
+    color: #FFF;
+    transition: 1s;
+    animation-name: victory;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    opacity: 1;
+}
+
+
+@keyframes victory{
+    0%{
+        transform: translateZ(0);
+        color: #FFF;
+    }
+    50%{
+        transform: translateZ(100px);
+        color: Red;
+    }
+    100%{
+        transform: translateZ(0);
+        color: #FFF;
+    }
+}
+
+#Success button{
+    position: absolute;
+    top: 44%;
+    left: 43%;
+    width: 170px;
+    height: 57px;
+    background-color: orangered;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 28px;
+
+}

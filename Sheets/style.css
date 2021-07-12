@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Cairo', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 4px;
+}
+:root{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 1300px;
+/*     background-color: #EEE; */
+    margin:  auto;
+    margin-bottom: 20px;
+}
+.minicontainer{
+    width: 800px;
+    background-color: #EEE;
+    margin:  auto;
+    margin-bottom: 20px;
+}
+
+body{
+    background-image: url('../games/wall1.jpg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+i:hover{
+    color: rgb(206, 128, 3);
+}
+
+
+header{
+    background-color: #0000004d;
+    color: white;
+    padding: 10px 120px;
+    font-weight:600;
+}
+header div{
+    display: inline-block;
+}
+header h1 span{
+    color: rgb(206, 128, 3);
+
+}
+header ul li, header a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    
+}
+header .navlinks{margin-left: 140px;}
+header .navlinks li{
+ float: left;
+ margin-left: 20px;
+}
+
+header li a:hover{color: rgb(206, 128, 3); border-bottom: rgb(206, 128, 3) solid 2px; padding-bottom: 10px;}
+header .login{
+    margin-left: 150px;
+}
+header .login li{
+    float: left;
+    margin-left: 20px;
+}
+header .active{color: rgb(206, 128, 3);   font-weight: bold; border-bottom: rgb(206, 128, 3) solid 2px; padding-bottom: 10px;}
+i{
+    cursor: pointer;
+}
+.clearboth{
+    clear: both;
+}
+.minicontainer .searchbar{
+    padding: 10px;
+    text-align: center;
+}
+.minicontainer .searchbar input{
+    width: 90%;
+    padding: 7px ;
+    margin-left: -25px;
+}
+.minicontainer .searchbar i{
+    font-size: 1.5em;
+    margin-left: -50px;
+    padding-top: 5px;
+}
+hr{ height: 3px; background-color: gray;}
+
+/*******Products*********/
+
+.bestgame{
+    margin-bottom: 40px;
+    border-bottom: solid 5px rgb(219, 189, 14);
+}
+.bestgame h1{
+    color: #FFF;
+    text-shadow: 0px 0px 10px rgb(87, 49, 49);
+}
+.bestgame .product{
+    width: 31% !important;
+
+}
+
+
+
+
+.productss{
+    margin: 20px;
+    padding: 10px;
+    perspective: 300px;
+}
+
+
+
+.productss .product{
+    height: 350px;
+    width: 23%;
+    border: solid 2px #DDD;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.productss .product img{width: 99%; height: 250px; margin: 1px 1px 10px 1px;    transition: 0.5s; cursor: pointer;}
+.productss .product a{
+    text-decoration: none;
+    color: #FFF;
+    text-shadow: 2px 2px #492b2b;
+    font-size: larger;
+    font-weight: bold;
+}
+.productss .product a:hover{color: rgb(206, 128, 3);
+
+
+}
+.productss .product p{
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+
+footer{
+    padding-top: 20px;
+    height: 250px;
+    background-color: #0000004d;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+}
+footer h3{
+    color: white;
+    word-spacing: 7px;
+    margin-bottom: 30px;
+}
+footer a{color: #FFF;}
+footer a:hover{color: rgb(206, 128, 3);}
+footer p{
+    margin-bottom: 50px;
+}
+/**********************************/
+.product img:hover{
+
+    transform: translateZ(10px);
+    perspective-origin: center;
+
+
+}
+
+/*********/
+footer span a{
+    padding: 15px 7px 7px;
+    background-color: rgb(6, 56, 6);
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute;
+    top: -15px;
+    right: 80px;
+
+}
+footer span a::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid white ;
+    border-right: 3px solid white ;
+    position: absolute;
+    top: 5px;
+    left: 25%;
+    transform: rotate(-45deg);
+    
+}

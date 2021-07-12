@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Cairo', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 1300px;
+/*     background-color: #EEE; */
+    margin:  auto;
+    margin-bottom: 20px;
+}
+.minicontainer{
+    width: 800px;
+    background-color: #EEE;
+    margin:  auto;
+    margin-bottom: 20px;
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 10px 120px;
+    font-weight:600;
+}
+header div{
+    display: inline-block;
+}
+header h1 span{
+    color: green;
+
+}
+header ul li, header a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    
+}
+header .navlinks{margin-left: 140px;}
+header .navlinks li{
+ float: left;
+ margin-left: 20px;
+}
+
+header li a:hover{color: green; border-bottom: green solid 2px; padding-bottom: 10px;}
+header .login{
+    margin-left: 150px;
+}
+header .login li{
+    float: left;
+    margin-left: 20px;
+}
+header .active{color: green;   font-weight: bold; border-bottom: green solid 2px; padding-bottom: 10px;}
+
+.clearboth{
+    clear: both;
+}
+.minicontainer .searchbar{
+    padding: 10px;
+    text-align: center;
+}
+.minicontainer .searchbar input{
+    width: 90%;
+    padding: 7px ;
+    margin-left: -25px;
+}
+.minicontainer .searchbar i{
+    font-size: 1.5em;
+    margin-left: -50px;
+    padding-top: 5px;
+}
+hr{ height: 3px; background-color: gray;}
+
+/*******Products*********/
+.loginform{
+    width: 600px;
+    height: 55vh;
+    background-color: #EEE;
+    margin: auto;
+
+}
+.loginform form{
+    padding: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.loginform form input{
+
+    margin: 10px;
+  padding: 5px 10px 0;
+}
+ .loginform form .password
+{
+   margin-left: 18px;
+}
+/*
+.loginform form .password
+{
+    position: absolute;
+    left: 30%;
+    margin-top: 10px;
+    padding: 3px 10px;
+}
+ .loginform form .endform{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}  */
+
+
+footer{
+    padding-top: 20px;
+    height: 250px;
+    background-color: #000;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+}
+footer h3{
+    color: white;
+    word-spacing: 7px;
+    margin-bottom: 30px;
+}
+footer a{color: #FFF;}
+footer a:hover{color: green;}
+footer p{
+    margin-bottom: 50px;
+}
+/**********************************/
+.product img:hover{
+
+    transform: translateZ(10px);
+    perspective-origin: center;
+
+
+}
+
+/*********/
+footer span a{
+    padding: 15px 7px 7px;
+    background-color: rgb(6, 56, 6);
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute;
+    top: -15px;
+    right: 80px;
+
+}
+footer span a::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid white ;
+    border-right: 3px solid white ;
+    position: absolute;
+    top: 5px;
+    left: 25%;
+    transform: rotate(-45deg);
+    
+}

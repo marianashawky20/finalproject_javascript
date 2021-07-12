@@ -1,0 +1,103 @@
+
+      *{
+          transition: 0.3;
+         
+      }
+        body {
+    margin: 0 auto;
+    background-color: #3e5d58;
+    }
+
+    h1{
+        
+        margin-top: 50px;
+        text-align: center;
+        color: #EEE;
+        font-size: 3.5em;
+
+    }
+    h2{
+    font-size: 1.9em;
+    text-align: center;
+    color: #3e5d58;
+    }
+
+    .form{
+        width: 600px;
+        padding: 50px;
+        text-align: center;
+        margin:40px auto;
+        background-color: #EEE;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow: rgb(42, 161, 165) 5px 5px ;
+
+    }
+    .form input{
+        padding: 7px 20px;
+        margin-bottom: 20px;
+        font-size: larger;
+        color:#3e5d58;
+        border-radius: 10px;
+
+    }
+    
+
+    #Success {
+        width: 98.7vw;
+        height: 1200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 80%;
+        background-color: #000;
+        perspective: 300px;
+    
+    }
+    
+    #Success h1 {
+        display: inline-block;
+        position: absolute;
+        top: 16%;
+        left: 32%;
+        font-size: 30px;
+        color: #FFF;
+        transition: 1s;
+        animation-name: victory;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        opacity: 1;
+    
+    }
+    
+    
+    @keyframes victory {
+        0% {
+            transform: translateZ(0);
+            color: #FFF;
+        }
+    
+        50% {
+            transform: translateZ(100px);
+            color: Red;
+        }
+    
+        100% {
+            transform: translateZ(0);
+            color: #FFF;
+        }
+    }
+    
+    #Success button {
+        position: absolute;
+        top: 25%;
+        left: 44%;
+        width: 170px;
+        height: 57px;
+        background-color:orangered ;
+        border-radius: 4px;
+        color: #FFF;
+        font-size: 28px;
+    
+    }
