@@ -22,7 +22,7 @@ if(val == rand)
    document.body.appendChild(cover);
    cover.appendChild(h1victory);
    cover.appendChild(btn);
-   if(Try==5){
+   if(Try<=5){
   h1victory.innerHTML = "Excellent you guess the number( "+rand +" )  In only ( "+Try+" ) Tries" ;
 
       document.body.appendChild(cover);
@@ -39,11 +39,18 @@ else if(val > rand)
    hint.innerHTML="TRY A SMALLER NUMBER";
    
 }
-else
+else if(val < rand) 
 {
    hint.innerHTML="TRY A GREATER NUMBER";
   
 }
+
+else
+{
+   hint.innerHTML="Its Not A Number !!";
+  
+}
+
 }
 
 
